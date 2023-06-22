@@ -7,6 +7,7 @@ import { HiOutlineDocumentDownload } from "react-icons/hi";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
+import Hero from "./components/Hero";
 
 const containerVariants = {
   hidden: {
@@ -36,6 +37,7 @@ function App() {
   return (
     <>
       <Header />
+      <Hero />
       <BackgroundCircles />
       <About />
       <CallToAction {...resumeCTA} />

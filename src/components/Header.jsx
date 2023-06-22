@@ -8,6 +8,7 @@ import { HiOutlineMail } from "react-icons/hi";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 import { motion } from "framer-motion";
+import MobileMenu from "./MobileMenu";
 
 export default function Header() {
   const [navMenu, setNavMenu] = useState(false);
@@ -156,11 +157,11 @@ export default function Header() {
             onClick={() => setNavMenu(!navMenu)}
           />
           {/* Menu */}
-          {/* <MobileMenu
+          <MobileMenu
             navMenu={navMenu}
             setNavMenu={setNavMenu}
             navLinks={navLinks}
-          /> */}
+          />
         </div>
       </nav>
     </motion.header>
