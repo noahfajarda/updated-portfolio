@@ -5,6 +5,8 @@ import BackgroundCircles from "./components/BackgroundCircles";
 import CallToAction from "./components/CallToAction";
 import { HiOutlineDocumentDownload } from "react-icons/hi";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
 
 const containerVariants = {
   hidden: {
@@ -33,10 +35,12 @@ const resumeCTA = {
 function App() {
   return (
     <>
+      <Header />
       <BackgroundCircles />
       <About />
       <CallToAction {...resumeCTA} />
       <Contact />
+      <Footer />
     </>
   );
 }
