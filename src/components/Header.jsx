@@ -118,18 +118,19 @@ export default function Header() {
             >
               Resume
             </a>
-            {/* Social Links */}
-            {socialLinks.map((socialLink) => (
-              <li key={socialLink.name}>
-                <a
-                  href={socialLink.url}
-                  className="text-2xl text-gray-400 hover:text-primary custom-transition"
-                >
-                  {socialLink.icon}
-                </a>
-              </li>
-            ))}
           </li>
+
+          {/* Social Links */}
+          {socialLinks.map((socialLink) => (
+            <li key={socialLink.name}>
+              <a
+                href={socialLink.url}
+                className="text-2xl text-gray-400 hover:text-primary custom-transition"
+              >
+                {socialLink.icon}
+              </a>
+            </li>
+          ))}
         </ul>
 
         {/* Mobile Menu Button */}
