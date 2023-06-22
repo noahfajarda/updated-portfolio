@@ -1,0 +1,4 @@
+technologies used:
+
+- react
+- tailwind
