@@ -3,6 +3,10 @@ import ProjectCard from "./ProjectCard";
 import { motion } from "framer-motion";
 
 export default function Work() {
+  const customGradientText =
+    "bg-clip-text text-transparent bg-gradient-to-t from-pink-500 to-violet-500";
+  // "bg-clip-text text-transparent bg-gradient-to-t from-tertiary via-primary to-secondary";
+
   // Project List for Work section
   const projectList = [
     {
@@ -78,8 +82,12 @@ export default function Work() {
           transition={{ type: "tween", ease: "easeOut", duration: 1 }}
           className="mb-12 md:mb-24"
         >
-          <h2 className="section-title">Work</h2>
-          <h3 className="section-subtitle">
+          <h2
+            className={`mb-4 text-3xl md:text-4xl text-center uppercase ${customGradientText} tracking-widest font-semibold`}
+          >
+            Work
+          </h2>
+          <h3 className="text-3xl md:text-5xl text-center font-bold">
             A selection of my latest web development projects
           </h3>
         </motion.div>

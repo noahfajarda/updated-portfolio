@@ -1,4 +1,3 @@
-import { useState } from "react";
 import "./App.css";
 import About from "./components/About";
 import BackgroundCircles from "./components/BackgroundCircles";
@@ -40,7 +39,6 @@ function App() {
     <>
       <Header />
       <Hero />
-      <BackgroundCircles />
       <About />
       <Skills />
       <CallToAction {...resumeCTA} />

@@ -42,3 +42,24 @@
 }
 
 /* ADDITIONALS */
+@media (min-width: 768px) {
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #0f172a;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #30a8ff;
+    border-radius: 5px;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #38bdf8;
+  }
+}
