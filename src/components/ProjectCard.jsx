@@ -47,7 +47,7 @@ export default function ProjectCard({ project }) {
       <div className="w-full my-2 flex flex-col item justify-center">
         {/* Project Title */}
         <h4 className="w-fit my-2 group">
-          <Link
+          <a
             href={project.projectLink}
             className={`flex flex-wrap text-2xl md:text-3xl font-bold tracking-wide group-hover:text-primary ${customTransition} hover:underline underline-offset-4`}
           >
@@ -57,7 +57,7 @@ export default function ProjectCard({ project }) {
             >
               <HiArrowRight />
             </span>
-          </Link>
+          </a>
         </h4>
         {/* Project Description */}
         <p className={`${paragraphTextColor}`}>{project.description}</p>

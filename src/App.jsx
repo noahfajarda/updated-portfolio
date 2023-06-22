@@ -9,6 +9,7 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Skills from "./components/Skills";
+import Work from "./components/Work";
 
 const containerVariants = {
   hidden: {
@@ -41,10 +42,11 @@ function App() {
       <Hero />
       <BackgroundCircles />
       <About />
+      <Skills />
       <CallToAction {...resumeCTA} />
+      <Work />
       <Contact />
       <Footer />
-      <Skills />
     </>
   );
 }
