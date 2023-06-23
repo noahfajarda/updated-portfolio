@@ -8,7 +8,7 @@ export default function Hero() {
     "bg-clip-text text-transparent bg-gradient-to-t from-pink-500 to-violet-500";
   const sectionContainer = "px-4 py-12 scroll-mt-16";
 
-  const LogoImage = "logo.svg";
+  const LogoImage = "logo2.svg";
   const devName = "Noah Fajarda";
 
   const roles = ["Full-Stack Developer", "Designer", "Coder", "Web Analyst"];
@@ -38,11 +38,11 @@ export default function Hero() {
           opacity: 0,
         }}
         animate={{
-          scale: [0, 1.5, 1],
+          scale: [0, 3.5, 1.5],
           opacity: 1,
         }}
         transition={{ delay: 2.9, duration: 0.5 }}
-        className="-mt-[64px] p-[4px] w-32 h-32 shrink-0 rounded-full bg-gradient-to-t from-tertiary via-primary to-secondary"
+        className="-mt-[64px] p-[4px] w-32 h-32 shrink-0 rounded-full bg-gradient-to-t from-blue via-primary to-green"
         // to add a colored border to the image, add the class "bg-" with your desired color such as "bg-blue-500"
         // you can also make gradient borders for image
         // change the width of the border by changing the padding
@@ -52,7 +52,7 @@ export default function Hero() {
           {/* For personal brand Logo or profile image */}
           {/* If using profile image, increase width and height for image to cover object and remove "mx-auto" */}
           <img
-            src={`/assets/${LogoImage}`}
+            src={`/${LogoImage}`}
             alt="Portfolio Logo"
             width={64} // {128} for profile images
             height={64} // {128} for profile images

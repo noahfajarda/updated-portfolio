@@ -2,9 +2,9 @@ import React from "react";
 
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
+import { customTransition } from "../utils/simplifiedTailwind";
 
 export default function MobileMenu({ navMenu, setNavMenu, navLinks }) {
-  const customTransition = "transition-all ease-in-out duration-300";
   const resumeLink =
     "https://www.linkedin.com/in/noah-fajarda/overlay/1635528997591/single-media-viewer/?profileId=ACoAADRi9VUBqCtvzRDc6m5Gw1VptpAsoClsVyI";
   // Social URL Links
@@ -49,7 +49,7 @@ export default function MobileMenu({ navMenu, setNavMenu, navLinks }) {
         <div className="my-4 py-4 flex flex-col border-y border-gray-500/30">
           <a
             href={resumeLink}
-            className="transition-all ease-in-out duration-300 py-2 px-4 sm:py-3 sm:px-6 sm:text-lg rounded-full font-semibold flex justify-center items-center gap-2 btn-secondary-style text-white"
+            className={`${customTransition} py-2 px-4 sm:py-3 sm:px-6 sm:text-lg rounded-full font-semibold flex justify-center items-center gap-2 btn-secondary-style text-white`}
           >
             Resume
           </a>

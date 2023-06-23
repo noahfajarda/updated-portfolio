@@ -2,9 +2,9 @@ import React from "react";
 import { motion } from "framer-motion";
 import { HiArrowRight } from "react-icons/hi";
 import { FaGithub } from "react-icons/fa";
+import { customTransition } from "../utils/simplifiedTailwind";
 
 export default function ProjectCard({ project }) {
-  const customTransition = "transition-all ease-in-out duration-300";
   const paragraphTextColor = "sm:text-lg text-gray-300";
   const projectLinkBtn =
     "transition-all ease-in-out duration-300 py-2 px-4 w-full sm:w-fit rounded-full font-semibold flex justify-center items-center gap-2";

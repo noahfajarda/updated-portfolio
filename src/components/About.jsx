@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { HiArrowRight } from "react-icons/hi";
+import { customTransition } from "../utils/simplifiedTailwind";
 
 // Bio paragraphs for About section
 const bioParagraphs = [
@@ -73,10 +74,12 @@ export default function About() {
             ))}
             <a
               href="#work"
-              className="w-fit my-2 flex flex-wrap text-primary font-semibold group transition-all ease-in-out duration-300 hover:underline underline-offset-4"
+              className={`w-fit my-2 flex flex-wrap text-primary font-semibold group ${customTransition} duration-300 hover:underline underline-offset-4`}
             >
               Check out some of my latest projects.
-              <span className="ml-1 mt-1 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all ease-in-out duration-300">
+              <span
+                className={`ml-1 mt-1 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 ${customTransition}`}
+              >
                 <HiArrowRight />
               </span>
             </a>

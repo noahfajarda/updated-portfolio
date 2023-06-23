@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { customTransition } from "../utils/simplifiedTailwind";
 
 export default function CallToAction({
   message,
@@ -7,10 +8,9 @@ export default function CallToAction({
   buttonIcon,
   linkURL,
 }) {
-  const custombtn =
-    "custom-transition py-2 px-4 sm:py-3 sm:px-6 sm:text-lg rounded-full font-semibold flex justify-center items-center gap-2";
-  const btnPrimaryStyle =
-    "custom-transition border border-primary bg-primary hover:bg-primary-shade hover:border-primary-shade text-white";
+  const custombtn = `${customTransition} py-2 px-4 sm:py-3 sm:px-6 sm:text-lg rounded-full font-semibold flex justify-center items-center gap-2`;
+  const btnPrimaryStyle = `${customTransition} border border-primary bg-primary hover:bg-primary-shade hover:border-primary-shade text-white`;
+  const check = !linkURL.includes("#");
 
   return (
     <section className="px-4 py-12 scroll-mt-16 py-0 mb-14">
@@ -28,15 +28,24 @@ export default function CallToAction({
         {/* Text */}
         <h3 className="text-xl md:text-3xl font-bold">{message}</h3>
         {/* Link */}
-        <a
-          href={linkURL}
-          target="_blank"
-          rel="noreferrer"
-          className={`${custombtn} ${btnPrimaryStyle}`}
-        >
-          {buttonMessage}
-          {buttonIcon}
-        </a>
+        {check ? (
+          <a
+            href={linkURL}
+            target="_blank"
+            rel="noreferrer"
+            className={`${custombtn} ${btnPrimaryStyle}`}
+          >
+            {buttonMessage}
+            {buttonIcon}
+          </a>
+        ) : (
+          <a href={linkURL}>
+            <button className={`${custombtn} ${btnPrimaryStyle}`}>
+              {buttonMessage}
+              {buttonIcon}
+            </button>
+          </a>
+        )}
       </motion.div>
     </section>
   );

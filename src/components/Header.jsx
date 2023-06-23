@@ -9,11 +9,12 @@ import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 import { motion } from "framer-motion";
 import MobileMenu from "./MobileMenu";
+import { customTransition } from "../utils/simplifiedTailwind";
 
 export default function Header() {
   const [navMenu, setNavMenu] = useState(false);
 
-  const LogoImage = "logo.svg";
+  const LogoImage = "logo2.svg";
 
   // Social URL Links
   const socialLinks = [
@@ -84,7 +85,7 @@ export default function Header() {
         <a
           href="/"
           aria-label="home"
-          className="py-1 md:p-0 hover:opacity-70 custom-transition"
+          className={`py-1 md:p-0 hover:opacity-70 ${customTransition}`}
           onClick={() => window.location.replace("/")}
         >
           <img
@@ -92,7 +93,7 @@ export default function Header() {
             alt="Portfolio Logo"
             width={0}
             height={0}
-            className="w-auto max-w-xs h-7"
+            className="w-auto max-w-xs h-7 scale-150"
           />
         </a>
         <ul className="hidden md:flex flex-row items-center gap-6 tracking-wider font-semibold">
@@ -101,7 +102,7 @@ export default function Header() {
             <li key={navLink.name}>
               <a
                 href={navLink.url}
-                className="hover:text-primary custom-transition"
+                className={`text-white hover:text-primary ${customTransition}`}
               >
                 {navLink.name}
               </a>
@@ -124,7 +125,7 @@ export default function Header() {
                 href={socialLink.url}
                 target="_blank"
                 rel="noreferrer"
-                className="text-2xl text-gray-400 hover:text-primary custom-transition"
+                className={`text-2xl text-gray-400 hover:text-primary ${customTransition}`}
               >
                 {socialLink.icon}
               </a>
@@ -151,7 +152,8 @@ export default function Header() {
           <div
             className={`${
               navMenu
-                ? "w-full h-screen bg-black/70 backdrop-blur-sm custom-transition"
+                ? "w-full h-screen bg-black/70 backdrop-blur-sm" +
+                  customTransition
                 : ""
             }`}
             onClick={() => setNavMenu(!navMenu)}
