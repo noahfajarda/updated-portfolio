@@ -11,7 +11,7 @@ export default function Hero() {
   const LogoImage = "logo.svg";
   const devName = "Noah Fajarda";
 
-  const roles = ["Full Stack Developer", "Designer", "Coder"];
+  const roles = ["Full-Stack Developer", "Designer", "Coder", "Web Analyst"];
 
   // typewriter effect
   const [text] = useTypewriter({
