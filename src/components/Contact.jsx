@@ -1,11 +1,23 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useReducer } from "react";
 import { motion } from "framer-motion";
 import { AiOutlineLoading } from "react-icons/ai";
 import { MdSend } from "react-icons/md";
+import { sendEmailToUser, sendEmailToMe } from "../utils/sendEmail";
 
 export default function Contact() {
   const formRef = useRef(null);
   const [loading, setLoading] = useState(false);
+  const [state, dispatch] = useReducer(
+    (state, action) => ({
+      ...state,
+      ...action,
+    }),
+    {
+      name: "",
+      email: "",
+      message: "",
+    }
+  );
 
   // function to handle form submission
   const handleSubmit = async (e) => {
@@ -14,19 +26,14 @@ export default function Contact() {
     // send form data using emailjs
     try {
       setLoading(true);
-      // SEND EMAIL
-      // await emailjs.sendForm(
-      //   process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
-      //   process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
-      //   formRef.current!,
-      //   process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
-      // );
+
+      sendEmailToUser(state);
+      sendEmailToMe(state);
+
       console.log("Email sent successfully");
       // formRef.current!.reset();
     } catch (error) {
-      console.error(`Error sending email: 
-      `);
-      // ${(error as Error).message}
+      console.error(`Error sending email: ${error.message}`);
     } finally {
       setLoading(false);
     }
@@ -91,22 +98,32 @@ export default function Contact() {
             onSubmit={handleSubmit}
             className="flex flex-col gap-4 mx-auto max-w-2xl text-gray-300 caret-primary focus:caret-primary"
           >
-            {/* name and email fields */}
-            {["name", "email"].map((type, idx) => (
-              <div className="flex flex-col gap-1" key={idx}>
-                <label className="uppercase md:text-md font-bold">
-                  {type.toUpperCase()}
-                </label>
-                <input
-                  className="p-3 rounded-md flex bg-zinc-900 outline-none border border-zinc-800 focus:border-primary text-white placeholder-gray-500 transition-all"
-                  type={type == "name" ? "text" : "email"}
-                  placeholder={type.toUpperCase()}
-                  name={type}
-                  required
-                />
-              </div>
-            ))}
-
+            {/* name field */}
+            <div className="flex flex-col gap-1">
+              <label className="uppercase md:text-md font-bold">Name</label>
+              <input
+                className="p-3 rounded-md flex bg-zinc-900 outline-none border border-zinc-800 focus:border-primary text-white placeholder-gray-500 transition-all"
+                type="text"
+                placeholder="Name"
+                name="name"
+                value={state.name}
+                onChange={(e) => dispatch({ name: e.target.value })}
+                required
+              />
+            </div>
+            {/* email field */}
+            <div className="flex flex-col gap-1">
+              <label className="uppercase md:text-md font-bold">Email</label>
+              <input
+                className="p-3 rounded-md flex bg-zinc-900 outline-none border border-zinc-800 focus:border-primary text-white placeholder-gray-500 transition-all"
+                type="text"
+                placeholder="Email"
+                name="email"
+                value={state.email}
+                onChange={(e) => dispatch({ email: e.target.value })}
+                required
+              />
+            </div>
             {/* Message Field */}
             <div className="flex flex-col gap-1">
               <label className="uppercase md:text-md tracking-wider font-bold">
@@ -117,12 +134,12 @@ export default function Contact() {
                 rows={6}
                 placeholder="Message"
                 name="message"
+                value={state.message}
+                onChange={(e) => dispatch({ message: e.target.value })}
                 required
               ></textarea>
             </div>
-
             {/* submit button */}
-
             <button
               type="submit"
               className="h-12 custom-transition py-2 px-4 sm:py-3 sm:px-6 sm:text-lg rounded-full font-semibold flex justify-center items-center gap-2 btn-primary-style"
