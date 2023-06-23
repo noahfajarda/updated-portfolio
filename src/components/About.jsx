@@ -42,8 +42,12 @@ export default function About() {
           transition={{ type: "tween", ease: "easeOut", duration: 1 }}
           className="section-title-container"
         >
-          <h2 className="section-title">About</h2>
-          <h3 className="section-subtitle">Me, Myself, and I</h3>
+          <h2 className="mb-4 text-3xl md:text-4xl text-center uppercase custom-gradient-text tracking-widest font-semibold">
+            About
+          </h2>
+          <h3 className="text-3xl md:text-5xl text-center font-bold">
+            Me, Myself, and I
+          </h3>
         </motion.div>
 
         <div className="w-full flex flex-col md:flex-row items-center md:items-start gap-12">

@@ -7,7 +7,9 @@ export default function ProjectCard({ project }) {
   const customTransition = "transition-all ease-in-out duration-300";
   const paragraphTextColor = "sm:text-lg text-gray-300";
   const projectLinkBtn =
-    "custom-transition py-2 px-4 w-full sm:w-fit rounded-full font-semibold flex justify-center items-center gap-2";
+    "transition-all ease-in-out duration-300 py-2 px-4 w-full sm:w-fit rounded-full font-semibold flex justify-center items-center gap-2";
+  const btnPrimaryStyle =
+    "transition-all ease-in-out duration-300 border border-primary bg-primary hover:bg-primary-shade hover:border-primary-shade text-white";
 
   return (
     <motion.li
@@ -23,6 +25,8 @@ export default function ProjectCard({ project }) {
       {/* Project Image */}
       <a
         href={project.projectLink}
+        target="_blank"
+        rel="noreferrer"
         className="lg:max-w-2xl relative flex w-full rounded-xl overflow-hidden group"
       >
         <img
@@ -78,14 +82,14 @@ export default function ProjectCard({ project }) {
           {/* Deployed Link */}
           <a
             href={project.projectLink}
-            className={`${projectLinkBtn} btn-primary-style`}
+            className={`${projectLinkBtn} ${btnPrimaryStyle}`}
           >
             View Project <HiArrowRight className="hidden sm:inline-flex" />
           </a>
           {/* Github Link */}
           <a
             href={project.githubLink}
-            className={`${projectLinkBtn} btn-primary-style`}
+            className={`${projectLinkBtn} ${btnPrimaryStyle}`}
           >
             Visit Github <FaGithub className="hidden sm:inline-flex" />
           </a>

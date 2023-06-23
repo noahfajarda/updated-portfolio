@@ -4,6 +4,8 @@ import SkillCard from "./SkillCard";
 import { HiCode, HiDatabase } from "react-icons/hi";
 
 export default function Skills() {
+  const customGradientText =
+    "bg-clip-text text-transparent bg-gradient-to-t from-pink-500 to-violet-500";
   // icon, title, summary, and skills list for Skill Cards
   const skillCardData = [
     // for front-end
@@ -74,7 +76,9 @@ export default function Skills() {
           transition={{ type: "tween", ease: "easeOut", duration: 1 }}
           className="mb-12 md:mb-24"
         >
-          <h2 className="mb-4 text-3xl md:text-4xl text-center uppercase custom-gradient-text tracking-widest font-semibold">
+          <h2
+            className={`mb-4 text-3xl md:text-4xl text-center uppercase ${customGradientText} tracking-widest font-semibold`}
+          >
             Skills
           </h2>
           <h3 className="text-3xl md:text-5xl text-center font-bold">

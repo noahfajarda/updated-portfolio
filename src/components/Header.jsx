@@ -20,22 +20,22 @@ export default function Header() {
     {
       name: "email",
       icon: <HiOutlineMail />,
-      url: "mailto:ktang1151@gmail.com",
+      url: "mailto:noahfajarda1@gmail.com",
     },
     {
       name: "linkedin",
       icon: <FaLinkedinIn />,
-      url: "https://www.linkedin.com/in/kyle-tang-",
+      url: "https://www.linkedin.com/in/noah-fajarda",
     },
     {
       name: "github",
       icon: <FaGithub />,
-      url: "https://github.com/kt946",
+      url: "https://github.com/noahfajarda",
     },
   ];
 
   const resumeLink =
-    "https://drive.google.com/file/d/1aUiFaAlnXzcr3Nrz8uu4RTZr9klqImxv/view?usp=sharing";
+    "https://drive.google.com/file/d/1WVVeyKDIkyPVNJW-rq5l2z70S1M15Dq1/view?usp=sharing";
 
   const navLinks = [
     {
@@ -110,13 +110,10 @@ export default function Header() {
 
           {/* Resume Link */}
           <li>
-            <a
-              href={resumeLink}
-              target="_blank"
-              rel="noreferrer"
-              className="py-2 px-4 rounded-full btn-secondary-style"
-            >
-              Resume
+            <a href={resumeLink} target="_blank" rel="noreferrer">
+              <button className="py-2 px-4 rounded-full btn-secondary-style">
+                Resume
+              </button>
             </a>
           </li>
 
@@ -125,6 +122,8 @@ export default function Header() {
             <li key={socialLink.name}>
               <a
                 href={socialLink.url}
+                target="_blank"
+                rel="noreferrer"
                 className="text-2xl text-gray-400 hover:text-primary custom-transition"
               >
                 {socialLink.icon}

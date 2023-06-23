@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 export default function Work() {
   const customGradientText =
     "bg-clip-text text-transparent bg-gradient-to-t from-pink-500 to-violet-500";
-  // "bg-clip-text text-transparent bg-gradient-to-t from-tertiary via-primary to-secondary";
 
   // Project List for Work section
   const projectList = [

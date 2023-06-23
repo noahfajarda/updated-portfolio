@@ -46,8 +46,17 @@ export default function Contact() {
           transition={{ type: "tween", ease: "easeOut", duration: 1 }}
           className="mb-12 md:mb-24"
         >
-          <h2 className="section-title">Contact</h2>
-          <h3 className="section-subtitle">
+          <h2
+            className="mb-4 text-3xl md:text-4xl text-center uppercase 
+          
+
+          bg-clip-text text-transparent bg-gradient-to-t from-pink-500 to-violet-500
+          
+          tracking-widest font-semibold"
+          >
+            Contact
+          </h2>
+          <h3 className="text-3xl md:text-5xl text-center font-bold">
             Let&apos;s build something incredible together!
           </h3>
         </motion.div>
@@ -61,7 +70,7 @@ export default function Contact() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.2 }}
           transition={{ type: "tween", ease: "easeOut", duration: 1 }}
-          className="section-subtitle-2"
+          className="mb-12 md:mb-24 mx-auto max-w-lg text-lg md:text-xl text-center text-gray-300"
         >
           I&apos;m currently looking for full-time positions, but if you got an
           exciting opportunity you need help with or you just want to say hi,
@@ -114,7 +123,10 @@ export default function Contact() {
 
             {/* submit button */}
 
-            <button type="submit" className="h-12 custom-btn btn-primary-style">
+            <button
+              type="submit"
+              className="h-12 custom-transition py-2 px-4 sm:py-3 sm:px-6 sm:text-lg rounded-full font-semibold flex justify-center items-center gap-2 btn-primary-style"
+            >
               {loading ? (
                 <AiOutlineLoading className="animate-spin h-6 w-6" />
               ) : (

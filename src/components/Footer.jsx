@@ -5,6 +5,9 @@ export default function Footer() {
   const year = new Date().getFullYear();
   const devName = "Noah Fajarda";
 
+  const customSocialButton =
+    "transition-all ease-in-out duration-300 p-2 rounded-full border-2 border-gray-500  text-2xl text-gray-300 hover:text-primary hover:border-purple-800";
+
   // Social URL Links
   const socialLinks = [
     {
@@ -38,7 +41,7 @@ export default function Footer() {
             <li key={socialLink.name} className="flex">
               <a
                 href={socialLink.url}
-                className="custom-social-btn"
+                className={`${customSocialButton} ease-in-out duration-300`}
                 target="_blank"
                 rel="noreferrer"
               >
