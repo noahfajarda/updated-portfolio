@@ -13,7 +13,7 @@ export default function CallToAction({
     "custom-transition border border-primary bg-primary hover:bg-primary-shade hover:border-primary-shade text-white";
 
   return (
-    <section className="section-container py-0 mb-14">
+    <section className="px-4 py-12 scroll-mt-16 py-0 mb-14">
       {/* Content Container */}
       <motion.div
         initial={{

@@ -4,6 +4,10 @@ import { motion } from "framer-motion";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 
 export default function Hero() {
+  const customGradientText =
+    "bg-clip-text text-transparent bg-gradient-to-t from-pink-500 to-violet-500";
+  const sectionContainer = "px-4 py-12 scroll-mt-16";
+
   const LogoImage = "logo.svg";
   const devName = "Noah Fajarda";
 
@@ -23,7 +27,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative section-container h-[calc(100vh-60px)] md:pt-64 flex flex-col items-center justify-center text-center"
+      className={`relative ${sectionContainer} h-[calc(100vh-60px)] md:pt-64 flex flex-col items-center justify-center text-center`}
     >
       {/* Background Animation */}
       <div className={`${bgOverlayStyle} ${bgGrid}`} />
@@ -78,7 +82,9 @@ export default function Hero() {
         {/* Name */}
         <h1 className="pb-3 text-4xl sm:text-5xl md:text-6xl lg:text-7xl uppercase font-extrabold tracking-wider md:tracking-widest">
           {/* change 'text-white' back to 'text-transparent' */}
-          <span className="bg-clip-text text-white bg-gradient-to-t from-tertiary via-primary to-secondary">
+          <span
+            className={`bg-clip-text bg-gradient-to-t from-tertiary via-primary to-secondary ${customGradientText}`}
+          >
             {devName}
           </span>
         </h1>

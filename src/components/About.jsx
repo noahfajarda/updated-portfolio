@@ -25,8 +25,11 @@ const bioParagraphs = [
 const profileImage = "profile.png";
 
 export default function About() {
+  const customGradientText =
+    "bg-clip-text text-transparent bg-gradient-to-t from-pink-500 to-violet-500";
+
   return (
-    <section id="about" className="section-container mb-14">
+    <section id="about" className="px-4 py-12 scroll-mt-16 mb-14">
       <div className="mx-auto w-full max-w-[1280px] flex flex-col">
         <motion.div
           initial={{
@@ -40,9 +43,11 @@ export default function About() {
           viewport={{ once: true, amount: 0.2 }}
           // tween == duration based animation
           transition={{ type: "tween", ease: "easeOut", duration: 1 }}
-          className="section-title-container"
+          className="px-4 py-12 scroll-mt-16"
         >
-          <h2 className="mb-4 text-3xl md:text-4xl text-center uppercase custom-gradient-text tracking-widest font-semibold">
+          <h2
+            className={`mb-4 text-3xl md:text-4xl text-center uppercase custom-gradient-text tracking-widest font-semibold ${customGradientText}`}
+          >
             About
           </h2>
           <h3 className="text-3xl md:text-5xl text-center font-bold">
@@ -66,13 +71,12 @@ export default function About() {
             {bioParagraphs.map((paragraph) => (
               <p key={paragraph.id}>{paragraph.text}</p>
             ))}
-
             <a
-              href="/work"
-              className="w-fit my-2 flex flex-wrap text-primary font-semibold group custom-transition hover:underline underline-offset-4"
+              href="#work"
+              className="w-fit my-2 flex flex-wrap text-primary font-semibold group transition-all ease-in-out duration-300 hover:underline underline-offset-4"
             >
               Check out some of my latest projects.
-              <span className="ml-1 mt-1 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 custom-transition">
+              <span className="ml-1 mt-1 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all ease-in-out duration-300">
                 <HiArrowRight />
               </span>
             </a>

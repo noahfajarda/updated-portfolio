@@ -36,7 +36,7 @@ const resumeCTA = {
 
 function App() {
   return (
-    <>
+    <div className="font-sans bg-[#0a0a0a] text-gray-100 h-screen z-0 overflow-y-auto overflow-x-hidden scroll-smooth scrollbar-firefox md:scrollbar">
       <Header />
       <Hero />
       <About />
@@ -45,7 +45,7 @@ function App() {
       <Work />
       <Contact />
       <Footer />
-    </>
+    </div>
   );
 }
 
