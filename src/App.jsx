@@ -1,6 +1,6 @@
 import "./App.css";
 import About from "./components/About";
-import BackgroundCircles from "./components/BackgroundCircles";
+import { FaRegSmileWink } from "react-icons/fa";
 import CallToAction from "./components/CallToAction";
 import { HiOutlineDocumentDownload } from "react-icons/hi";
 import Contact from "./components/Contact";
@@ -34,12 +34,20 @@ const resumeCTA = {
   linkURL: resumeLink,
 };
 
+const contactCTA = {
+  message: `Don't be a stranger. Feel free to reach out and connect with me!`,
+  buttonMessage: "Get in touch",
+  buttonIcon: <FaRegSmileWink />,
+  linkURL: "#contact",
+};
+
 function App() {
   return (
     <div className="font-sans bg-[#0a0a0a] text-gray-100 h-screen z-0 overflow-y-auto overflow-x-hidden scroll-smooth scrollbar-firefox md:scrollbar">
       <Header />
       <Hero />
       <About />
+      <CallToAction {...contactCTA} />
       <Skills />
       <CallToAction {...resumeCTA} />
       <Work />
