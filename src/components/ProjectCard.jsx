@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 import { HiArrowRight } from "react-icons/hi";
 import { FaGithub } from "react-icons/fa";

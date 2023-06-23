@@ -1,11 +1,9 @@
-import React from "react";
 import BackgroundCircles from "./BackgroundCircles";
 import { motion } from "framer-motion";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
+import { customGradientText } from "../utils/simplifiedTailwind";
 
 export default function Hero() {
-  const customGradientText =
-    "bg-clip-text text-transparent bg-gradient-to-t from-pink-500 to-violet-500";
   const sectionContainer = "px-4 py-12 scroll-mt-16";
 
   const LogoImage = "logo2.svg";

@@ -1,8 +1,9 @@
-import React, { useState, useRef, useReducer } from "react";
+import { useState, useRef, useReducer } from "react";
 import { motion } from "framer-motion";
 import { AiOutlineLoading } from "react-icons/ai";
 import { MdSend } from "react-icons/md";
 import { sendEmailToUser, sendEmailToMe } from "../utils/sendEmail";
+import { customGradientText } from "../utils/simplifiedTailwind";
 
 export default function Contact() {
   const formRef = useRef(null);
@@ -54,12 +55,7 @@ export default function Contact() {
           className="mb-12 md:mb-24"
         >
           <h2
-            className="mb-4 text-3xl md:text-4xl text-center uppercase 
-          
-
-          bg-clip-text text-transparent bg-gradient-to-t from-pink-500 to-violet-500
-          
-          tracking-widest font-semibold"
+            className={`mb-4 text-3xl md:text-4xl text-center uppercase ${customGradientText} tracking-widest font-semibold`}
           >
             Contact
           </h2>

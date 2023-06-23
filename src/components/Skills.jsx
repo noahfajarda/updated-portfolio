@@ -1,11 +1,9 @@
-import React from "react";
 import { motion } from "framer-motion";
 import SkillCard from "./SkillCard";
 import { HiCode, HiDatabase } from "react-icons/hi";
+import { customGradientText } from "../utils/simplifiedTailwind";
 
 export default function Skills() {
-  const customGradientText =
-    "bg-clip-text text-transparent bg-gradient-to-t from-pink-500 to-violet-500";
   // icon, title, summary, and skills list for Skill Cards
   const skillCardData = [
     // for front-end

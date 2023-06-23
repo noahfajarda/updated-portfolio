@@ -1,11 +1,8 @@
-import React from "react";
 import ProjectCard from "./ProjectCard";
 import { motion } from "framer-motion";
+import { customGradientText } from "../utils/simplifiedTailwind";
 
 export default function Work() {
-  const customGradientText =
-    "bg-clip-text text-transparent bg-gradient-to-t from-pink-500 to-violet-500";
-
   // Project List for Work section
   const projectList = [
     {

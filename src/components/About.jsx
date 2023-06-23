@@ -1,6 +1,9 @@
 import { motion } from "framer-motion";
 import { HiArrowRight } from "react-icons/hi";
-import { customTransition } from "../utils/simplifiedTailwind";
+import {
+  customTransition,
+  customGradientText,
+} from "../utils/simplifiedTailwind";
 
 // Bio paragraphs for About section
 const bioParagraphs = [
@@ -26,9 +29,6 @@ const bioParagraphs = [
 const profileImage = "profile.png";
 
 export default function About() {
-  const customGradientText =
-    "bg-clip-text text-transparent bg-gradient-to-t from-pink-500 to-violet-500";
-
   return (
     <section id="about" className="px-4 py-12 scroll-mt-16 mb-14">
       <div className="mx-auto w-full max-w-[1280px] flex flex-col">
