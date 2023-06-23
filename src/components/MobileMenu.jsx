@@ -38,7 +38,7 @@ export default function MobileMenu({ navMenu, setNavMenu, navLinks }) {
           <a
             key={navLink.name}
             href={navLink.url}
-            className="py-2 px-3 flex items-center rounded-lg hover:bg-slate-800 font-semibold hover:text-primary custom-transition"
+            className={`py-2 px-3 flex items-center rounded-lg hover:bg-slate-800 font-semibold hover:text-primary text-white ${customTransition}`}
             onClick={() => setNavMenu(false)}
           >
             <span className="pr-6 text-2xl text-gray-400">{navLink.icon}</span>
@@ -47,7 +47,10 @@ export default function MobileMenu({ navMenu, setNavMenu, navLinks }) {
         ))}
         {/* Resume Link */}
         <div className="my-4 py-4 flex flex-col border-y border-gray-500/30">
-          <a href={resumeLink} className="custom-btn btn-secondary-style">
+          <a
+            href={resumeLink}
+            className="transition-all ease-in-out duration-300 py-2 px-4 sm:py-3 sm:px-6 sm:text-lg rounded-full font-semibold flex justify-center items-center gap-2 btn-secondary-style text-white"
+          >
             Resume
           </a>
         </div>
