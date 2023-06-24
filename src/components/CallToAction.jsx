@@ -1,6 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { customTransition, sectionStyling } from "../utils/simplifiedTailwind";
+import {
+  customButton,
+  customTransition,
+  sectionStyling,
+} from "../utils/simplifiedTailwind";
 
 export default function CallToAction({
   message,
@@ -8,7 +12,6 @@ export default function CallToAction({
   buttonIcon,
   linkURL,
 }) {
-  const custombtn = `${customTransition} py-2 px-4 sm:py-3 sm:px-6 sm:text-lg rounded-full font-semibold flex justify-center items-center gap-2`;
   const btnPrimaryStyle = `${customTransition} border border-primary bg-primary hover:bg-primary-shade hover:border-primary-shade text-white`;
   const check = !linkURL.includes("#");
 
@@ -33,14 +36,14 @@ export default function CallToAction({
             href={linkURL}
             target="_blank"
             rel="noreferrer"
-            className={`${custombtn} ${btnPrimaryStyle}`}
+            className={`${customButton} ${btnPrimaryStyle}`}
           >
             {buttonMessage}
             {buttonIcon}
           </a>
         ) : (
           <a href={linkURL}>
-            <button className={`${custombtn} ${btnPrimaryStyle}`}>
+            <button className={`${customButton} ${btnPrimaryStyle}`}>
               {buttonMessage}
               {buttonIcon}
             </button>

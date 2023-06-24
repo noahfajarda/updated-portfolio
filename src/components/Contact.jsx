@@ -4,6 +4,7 @@ import { AiOutlineLoading } from "react-icons/ai";
 import { MdSend } from "react-icons/md";
 import { sendEmailToUser, sendEmailToMe } from "../utils/sendEmail";
 import {
+  customButton,
   customGradientText,
   sectionStyling,
 } from "../utils/simplifiedTailwind";
@@ -141,7 +142,7 @@ export default function Contact() {
             {/* submit button */}
             <button
               type="submit"
-              className="h-12 custom-transition py-2 px-4 sm:py-3 sm:px-6 sm:text-lg rounded-full font-semibold flex justify-center items-center gap-2 btn-primary-style"
+              className={`h-12 ${customButton} items-center gap-2 btn-primary-style`}
             >
               {loading ? (
                 <AiOutlineLoading className="animate-spin h-6 w-6" />
