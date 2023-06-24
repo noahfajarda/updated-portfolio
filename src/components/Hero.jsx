@@ -8,7 +8,6 @@ import {
 
 export default function Hero() {
   const LogoImage = "logo2.svg";
-  const devName = "Noah Fajarda";
 
   const roles = ["Full-Stack Developer", "Designer", "Coder", "Web Analyst"];
 
@@ -84,7 +83,7 @@ export default function Hero() {
           <span
             className={`bg-clip-text bg-gradient-to-t from-tertiary via-primary to-secondary ${customGradientText}`}
           >
-            {devName}
+            Noah Fajarda
           </span>
         </h1>
         {/* Typing Text */}

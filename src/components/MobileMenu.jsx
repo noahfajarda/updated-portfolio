@@ -2,7 +2,11 @@ import React from "react";
 
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
-import { customButton, customTransition } from "../utils/simplifiedTailwind";
+import {
+  customButton,
+  customSocialButton,
+  customTransition,
+} from "../utils/simplifiedTailwind";
 
 export default function MobileMenu({ navMenu, setNavMenu, navLinks }) {
   const resumeLink =
@@ -60,7 +64,7 @@ export default function MobileMenu({ navMenu, setNavMenu, navLinks }) {
             <a
               key={socialLink.name}
               href={socialLink.url}
-              className="custom-social-btn"
+              className={`${customSocialButton}`}
             >
               {socialLink.icon}
             </a>

@@ -28,7 +28,7 @@ export default function BackgroundCircles() {
 
       <div className="h-[450px] w-[450px] md:h-[600px] md:w-[600px] absolute rounded-full border-4 md:border-8 border-x-transparent border-[#0E1115] animate-[spin_10s_linear_infinite_reverse]" />
 
-      <div className="h-[500px] w-[500px] md:h-[650px] md:w-[650px] absolute rounded-full border md:border-2 border-primary/40 animate-pulse" />
+      <div className="h-[500px] w-[500px] md:h-[650px] md:w-[650px] absolute rounded-full border md:border-2 border-cyan-600 animate-pulse" />
 
       <div className="h-[550px] w-[550px] md:h-[700px] md:w-[700px] absolute rounded-full border-double border-4 md:border-[10px] border-x-transparent border-[#151A20] animate-[spin_10s_linear_infinite]" />
 

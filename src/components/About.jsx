@@ -48,7 +48,7 @@ export default function About() {
           className={`${sectionStyling}`}
         >
           <h2
-            className={`mb-4 text-3xl md:text-4xl text-center uppercase custom-gradient-text tracking-widest font-semibold ${customGradientText}`}
+            className={`mb-4 text-3xl md:text-4xl text-center uppercase tracking-widest font-semibold ${customGradientText}`}
           >
             About
           </h2>

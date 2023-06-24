@@ -1,12 +1,10 @@
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
-import { customTransition } from "../utils/simplifiedTailwind";
+import { customSocialButton } from "../utils/simplifiedTailwind";
 
 export default function Footer() {
   const year = new Date().getFullYear();
   const devName = "Noah Fajarda";
-
-  const customSocialButton = `${customTransition} p-2 rounded-full border-2 border-gray-500  text-2xl text-gray-300 hover:text-primary hover:border-purple-800`;
 
   // Social URL Links
   const socialLinks = [
