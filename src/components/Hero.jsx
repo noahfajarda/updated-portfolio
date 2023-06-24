@@ -7,7 +7,7 @@ import {
 } from "../utils/simplifiedTailwind";
 
 export default function Hero() {
-  const LogoImage = "logo2.svg";
+  const LogoImage = "logo.svg";
 
   const roles = ["Full-Stack Developer", "Designer", "Coder", "Web Analyst"];
 

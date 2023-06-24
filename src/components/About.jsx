@@ -10,19 +10,23 @@ import {
 const bioParagraphs = [
   {
     id: "paragraph1",
-    text: `Hi everyone! My name is Noah and I'm a full stack web developer with a B.A. in Health Sciences from University of California, Irvine and a passion for technology, creativity, and learning. I've completed a certificate in Full Stack Web Development from the Rutgers Coding Bootcamp.`,
+    text: `Hi everyone! My name is Noah and I'm a full-stack software developer from the Bay Area with a B.A. in Health Sciences from the University of California, Irvine and I have a passion for technology, creativity, and learning. I've completed a program and received a certificate in Full-Stack Web Development from the University of California, Irvine's Coding Bootcamp.`,
   },
   {
     id: "paragraph2",
-    text: `As a quick learner and versatile problem-solver, I'm able to collaborate with teams to develop projects with simple, elegant designs and robust databases. I'm eager to demonstrate my newly acquired skills and build innovative applications that help me grow as a developer and provide users with immersive digital experiences.`,
+    text: `I undertook various projects, where I gained hands-on experience in designing and implementing solutions to real-world problems. I also had the opportunity to collaborate with diverse teams, fostering effective communication and teamwork skills. I enjoy working in a collaborative environment, where ideas can be shared and refined to achieve innovative and efficient solutions.`,
   },
   {
     id: "paragraph3",
-    text: `When I'm not coding on my laptop, skimming through documentation, or searching Google for solutions to various issues, I enjoy cooking, movies, video games, playing guitar, and learning new skills and languages.`,
+    text: `I'm eager to demonstrate my newly acquired skills by building innovative applications that help me grow as a developer and provide users with immersive digital experiences. I constantly seek opportunities to expand my knowledge and stay updated on emerging technologies, frameworks, and best practices. I believe that continuous learning is vital in an industry that is constantly evolving.`,
   },
   {
     id: "paragraph4",
-    text: `And yes, I do like blue. Blue is cool.`,
+    text: `When I'm not coding on my laptop or skimming through documentation, I enjoy movies, playing piano, guitar, and basketball, listening to music, and learning new skills and languages.`,
+  },
+  {
+    id: "paragraph5",
+    text: `As a passionate and dedicated individual with a strong interest in technology, I am thrilled to embark on my journey in the world of software development.`,
   },
 ];
 
@@ -71,11 +75,13 @@ export default function About() {
           >
             {/* iterate through bio paragraphs */}
             {bioParagraphs.map((paragraph) => (
-              <p key={paragraph.id}>{paragraph.text}</p>
+              <p key={paragraph.id} className={"text-sm sm:text-lg"}>
+                {paragraph.text}
+              </p>
             ))}
             <a
               href="#work"
-              className={`w-fit my-2 flex flex-wrap text-primary font-semibold group ${customTransition} duration-300 hover:underline underline-offset-4`}
+              className={`w-fit my-2 flex flex-wrap text-cyan-400 font-semibold group ${customTransition} duration-300 hover:underline hover:text-cyan-400 underline-offset-4`}
             >
               Check out some of my latest projects.
               <span

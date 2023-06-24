@@ -14,7 +14,7 @@ import { customTransition } from "../utils/simplifiedTailwind";
 export default function Header() {
   const [navMenu, setNavMenu] = useState(false);
 
-  const LogoImage = "logo2.svg";
+  const LogoImage = "logo.svg";
 
   // Social URL Links
   const socialLinks = [
@@ -36,7 +36,7 @@ export default function Header() {
   ];
 
   const resumeLink =
-    "https://drive.google.com/file/d/1WVVeyKDIkyPVNJW-rq5l2z70S1M15Dq1/view?usp=sharing";
+    "https://drive.google.com/file/d/1WVVeyKDIkyPVNJW-rq5l2z70S1M15Dq1/view";
 
   const navLinks = [
     {

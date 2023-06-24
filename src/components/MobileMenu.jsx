@@ -10,7 +10,7 @@ import {
 
 export default function MobileMenu({ navMenu, setNavMenu, navLinks }) {
   const resumeLink =
-    "https://www.linkedin.com/in/noah-fajarda/overlay/1635528997591/single-media-viewer/?profileId=ACoAADRi9VUBqCtvzRDc6m5Gw1VptpAsoClsVyI";
+    "https://drive.google.com/file/d/1WVVeyKDIkyPVNJW-rq5l2z70S1M15Dq1/view";
   // Social URL Links
   const socialLinks = [
     {

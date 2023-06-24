@@ -12,7 +12,7 @@ export default function CallToAction({
   buttonIcon,
   linkURL,
 }) {
-  const btnPrimaryStyle = `${customTransition} border border-primary bg-primary hover:bg-primary-shade hover:border-primary-shade text-white`;
+  const btnPrimaryStyle = `${customTransition} hover:border-sky-500 bg-sky-500 text-black hover:bg-sky-600 hover:text-white`;
   const check = !linkURL.includes("#");
 
   return (
