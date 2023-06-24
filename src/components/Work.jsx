@@ -1,6 +1,9 @@
 import ProjectCard from "./ProjectCard";
 import { motion } from "framer-motion";
-import { customGradientText } from "../utils/simplifiedTailwind";
+import {
+  customGradientText,
+  sectionStyling,
+} from "../utils/simplifiedTailwind";
 
 export default function Work() {
   // Project List for Work section
@@ -64,7 +67,7 @@ export default function Work() {
   ];
 
   return (
-    <section id="work" className="px-4 py-12 scroll-mt-16">
+    <section id="work" className={`${sectionStyling}`}>
       {/* Content Container */}
       <div className="mx-auto w-full max-w-[1280px] flex flex-col">
         {/* Section Title */}

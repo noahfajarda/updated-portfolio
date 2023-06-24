@@ -3,7 +3,10 @@ import { motion } from "framer-motion";
 import { AiOutlineLoading } from "react-icons/ai";
 import { MdSend } from "react-icons/md";
 import { sendEmailToUser, sendEmailToMe } from "../utils/sendEmail";
-import { customGradientText } from "../utils/simplifiedTailwind";
+import {
+  customGradientText,
+  sectionStyling,
+} from "../utils/simplifiedTailwind";
 
 export default function Contact() {
   const formRef = useRef(null);
@@ -41,7 +44,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="px-4 py-12 scroll-mt-16">
+    <section id="contact" className={`${sectionStyling}`}>
       {/* Content Container */}
       <div className="mx-auto w-full max-w-[1280px] flex flex-col">
         <motion.div

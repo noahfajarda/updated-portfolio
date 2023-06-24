@@ -3,13 +3,14 @@ import { HiArrowRight } from "react-icons/hi";
 import {
   customTransition,
   customGradientText,
+  sectionStyling,
 } from "../utils/simplifiedTailwind";
 
 // Bio paragraphs for About section
 const bioParagraphs = [
   {
     id: "paragraph1",
-    text: `Hi everyone! My name is Kyle and I'm a full stack web developer with a B.A. in Psychology from Rutgers University and a passion for technology, creativity, and learning. I've completed a certificate in Full Stack Web Development from the Rutgers Coding Bootcamp.`,
+    text: `Hi everyone! My name is Noah and I'm a full stack web developer with a B.A. in Health Sciences from University of California, Irvine and a passion for technology, creativity, and learning. I've completed a certificate in Full Stack Web Development from the Rutgers Coding Bootcamp.`,
   },
   {
     id: "paragraph2",
@@ -30,7 +31,7 @@ const profileImage = "profile.png";
 
 export default function About() {
   return (
-    <section id="about" className="px-4 py-12 scroll-mt-16 mb-14">
+    <section id="about" className={`${sectionStyling} mb-14`}>
       <div className="mx-auto w-full max-w-[1280px] flex flex-col">
         <motion.div
           initial={{
@@ -44,7 +45,7 @@ export default function About() {
           viewport={{ once: true, amount: 0.2 }}
           // tween == duration based animation
           transition={{ type: "tween", ease: "easeOut", duration: 1 }}
-          className="px-4 py-12 scroll-mt-16"
+          className={`${sectionStyling}`}
         >
           <h2
             className={`mb-4 text-3xl md:text-4xl text-center uppercase custom-gradient-text tracking-widest font-semibold ${customGradientText}`}

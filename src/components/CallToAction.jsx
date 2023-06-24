@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { customTransition } from "../utils/simplifiedTailwind";
+import { customTransition, sectionStyling } from "../utils/simplifiedTailwind";
 
 export default function CallToAction({
   message,
@@ -13,7 +13,7 @@ export default function CallToAction({
   const check = !linkURL.includes("#");
 
   return (
-    <section className="px-4 py-12 scroll-mt-16 py-0 mb-14">
+    <section className={`${sectionStyling} py-0 mb-14`}>
       {/* Content Container */}
       <motion.div
         initial={{

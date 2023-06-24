@@ -1,7 +1,10 @@
 import { motion } from "framer-motion";
 import SkillCard from "./SkillCard";
 import { HiCode, HiDatabase } from "react-icons/hi";
-import { customGradientText } from "../utils/simplifiedTailwind";
+import {
+  customGradientText,
+  sectionStyling,
+} from "../utils/simplifiedTailwind";
 
 export default function Skills() {
   // icon, title, summary, and skills list for Skill Cards
@@ -60,7 +63,7 @@ export default function Skills() {
   ];
 
   return (
-    <section id="skills" className="px-4 py-12 scroll-mt-16 mb-14">
+    <section id="skills" className={`${sectionStyling} mb-14`}>
       {/* Content Container */}
       <div className="mx-auto w-full max-w-[1280px] flex flex-col">
         {/* Section Title */}

@@ -1,11 +1,12 @@
 import BackgroundCircles from "./BackgroundCircles";
 import { motion } from "framer-motion";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
-import { customGradientText } from "../utils/simplifiedTailwind";
+import {
+  customGradientText,
+  sectionStyling,
+} from "../utils/simplifiedTailwind";
 
 export default function Hero() {
-  const sectionContainer = "px-4 py-12 scroll-mt-16";
-
   const LogoImage = "logo2.svg";
   const devName = "Noah Fajarda";
 
@@ -25,7 +26,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className={`relative ${sectionContainer} h-[calc(100vh-60px)] md:pt-64 flex flex-col items-center justify-center text-center`}
+      className={`relative ${sectionStyling} h-[calc(100vh-60px)] md:pt-64 flex flex-col items-center justify-center text-center`}
     >
       {/* Background Animation */}
       <div className={`${bgOverlayStyle} ${bgGrid}`} />
