@@ -25,7 +25,7 @@ const containerVariants = {
 
 // Resume URL link
 const resumeLink =
-  "https://drive.google.com/file/d/1aUiFaAlnXzcr3Nrz8uu4RTZr9klqImxv/view?usp=sharing";
+  "https://drive.google.com/file/d/1WVVeyKDIkyPVNJW-rq5l2z70S1M15Dq1/view";
 
 const resumeCTA = {
   message: `Want to see more of what I can do? Check out my resume.`,
@@ -35,7 +35,7 @@ const resumeCTA = {
 };
 
 const contactCTA = {
-  message: `Don't be a stranger. Feel free to reach out and connect with me!`,
+  message: `Don't hesitate to get in touch and connect with me!`,
   buttonMessage: "Get in touch",
   buttonIcon: <FaRegSmileWink />,
   linkURL: "#contact",
