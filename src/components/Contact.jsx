@@ -81,8 +81,8 @@ export default function Contact() {
         >
           I&apos;m currently looking for full-time positions, but if you got an
           exciting opportunity you need help with or you just want to say hi,
-          fill out this awesome contact form below or connect with me on social
-          media!
+          fill out this awesome contact form below or connect with me through my
+          socials!
         </motion.p>
 
         <div className="w-full">

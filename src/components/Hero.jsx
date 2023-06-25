@@ -9,7 +9,14 @@ import {
 export default function Hero() {
   const LogoImage = "logo.svg";
 
-  const roles = ["Full-Stack Developer", "Designer", "Coder", "Web Analyst"];
+  const roles = [
+    "Full-Stack Developer",
+    "Data Analyst",
+    "Designer",
+    "Optimization Specialist",
+    "Web Analyst",
+    "Coder",
+  ];
 
   // typewriter effect
   const [text] = useTypewriter({

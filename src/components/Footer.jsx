@@ -21,7 +21,7 @@ export default function Footer() {
     {
       name: "github",
       icon: <FaGithub />,
-      url: "https://github.com/kt946",
+      url: "https://github.com/noahfajarda",
     },
   ];
 

@@ -52,6 +52,8 @@ export default function ProjectCard({ project }) {
         <h4 className="w-fit my-2 group">
           <a
             href={project.projectLink}
+            target="_blank"
+            rel="noreferrer"
             className={`flex flex-wrap text-2xl md:text-3xl font-bold tracking-wide group-hover:text-primary ${customTransition} hover:underline underline-offset-4`}
           >
             {project.title}
@@ -81,6 +83,8 @@ export default function ProjectCard({ project }) {
           {/* Deployed Link */}
           <a
             href={project.projectLink}
+            target="_blank"
+            rel="noreferrer"
             className={`${projectLinkBtn} ${btnPrimaryStyle}`}
           >
             View Project <HiArrowRight className="hidden sm:inline-flex" />
@@ -88,6 +92,8 @@ export default function ProjectCard({ project }) {
           {/* Github Link */}
           <a
             href={project.githubLink}
+            target="_blank"
+            rel="noreferrer"
             className={`${projectLinkBtn} ${btnPrimaryStyle}`}
           >
             Visit Github <FaGithub className="hidden sm:inline-flex" />
