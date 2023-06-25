@@ -26,9 +26,10 @@ export default function ProjectCard({ project }) {
         href={project.projectLink}
         target="_blank"
         rel="noreferrer"
-        className="lg:max-w-2xl relative flex w-full rounded-xl overflow-hidden group"
+        className="lg:max-w-2xl relative flex w-full rounded-xl overflow-hidden group bg-blue-800"
       >
         <img
+          style={{ opacity: "0.7" }}
           src={`/assets/${project.image}`}
           alt={`Project screenshot of ${project.title}`}
           width={1920}
