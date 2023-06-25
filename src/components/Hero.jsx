@@ -27,7 +27,7 @@ export default function Hero() {
 
   const bgOverlayStyle = "absolute inset-0 w-full h-full z-0";
   const bgGrid =
-    "bg-[url('../public/assets/grid.svg')] bg-repeat [mask-image:linear-gradient(90deg,rgba(255,255,255,0.1),transparent,transparent,transparent,rgba(255,255,255,0.1))]";
+    "bg-[url('../assets/grid.svg')] bg-repeat [mask-image:linear-gradient(90deg,rgba(255,255,255,0.1),transparent,transparent,transparent,rgba(255,255,255,0.1))]";
 
   return (
     <section
