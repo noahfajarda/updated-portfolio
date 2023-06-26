@@ -1,17 +1,6 @@
-technologies used:
-
-- react
-- tailwind
-- framer motion
-- figma
-- elasticemail (https://app.elasticemail.com/api/settings)
-  - see amount of emails sent (https://app.elasticemail.com/api/activity)
-  - Email usage plan (https://app.elasticemail.com/billing/emailapi/details)
-  - use elasticeemail templates as html (https://app.elasticemail.com/api/templates/new?page=1&tab=1)
-
 <div align="center">
 
-# <img src="./public/logo.png" alt="logo" width="40"/> **My Personal Portfolio**
+# <img src="./public/logo.png" alt="logo" width="40"/></br> **My Personal Portfolio**
 
 ### WebApp Link: <a href="https://noahfajarda.vercel.app/" target="_blank">https://noahfajarda.vercel.app/</a>
 
@@ -32,8 +21,12 @@ technologies used:
 
 ## Additional Technologies
 
-- <img height="25" src="https://reactrouter.com/_brand/react-router-mark-color.png" alt="react-router"> React Router
-- <img height="25" src="https://seeklogo.com/images/M/materialize-logo-0FCAD8A6F8-seeklogo.com.png" alt="materialize"> Materialize
+- <img height="25" src="https://seeklogo.com/images/F/framer-motion-logo-DA1E33CAA1-seeklogo.com.png" alt="react-router"> Framer Motion
+- <img height="25" src="https://cdn.freebiesupply.com/logos/large/2x/figma-1-logo-png-transparent.png" alt="materialize"> Figma
+- <a href="https://app.elasticemail.com/api/settings">Elastic Email</a>
+  - <a href="https://app.elasticemail.com/api/activity">See amount of emails sent</a>
+  - <a href="https://app.elasticemail.com/billing/emailapi/details">Email usage plan</a>
+  - <a href="https://app.elasticemail.com/api/templates/new?page=1&tab=1">Use Elastic Email templates as HTML</a>
 
 ## Build Setup
 
