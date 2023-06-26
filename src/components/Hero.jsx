@@ -48,12 +48,26 @@ export default function Hero() {
         }}
         transition={{ delay: 2.9, duration: 0.5 }}
         className="-mt-[64px] p-[4px] w-32 h-32 shrink-0 rounded-full bg-gradient-to-t from-blue via-primary to-green"
+        style={{ zIndex: 20 }}
         // to add a colored border to the image, add the class "bg-" with your desired color such as "bg-blue-500"
         // you can also make gradient borders for image
         // change the width of the border by changing the padding
       >
         {/* Center Image */}
-        <div className="flex flex-col justify-center w-full h-full rounded-full overflow-hidden bg-black">
+        <motion.div
+          className="flex flex-col justify-center w-full h-full rounded-full overflow-hidden bg-black ring-2 ring-blue-600"
+          drag
+          dragConstraints={{ left: 0, top: 0, right: 0, bottom: 0 }}
+          dragElastic={0.3}
+          animate={{
+            x: [
+              0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+              0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -10, 10, -10, 10,
+              0,
+            ],
+          }}
+          transition={{ duration: 7, repeat: Infinity }}
+        >
           {/* For personal brand Logo or profile image */}
           {/* If using profile image, increase width and height for image to cover object and remove "mx-auto" */}
           <img
@@ -63,7 +77,7 @@ export default function Hero() {
             height={64} // {128} for profile images
             className="mx-auto object-cover object-center" // use "mx-auto" to center logo
           />
-        </div>
+        </motion.div>
       </motion.div>
 
       {/* Heading */}
@@ -94,7 +108,7 @@ export default function Hero() {
           </span>
         </h1>
         {/* Typing Text */}
-        <h2 className="h-10 uppercase text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-widest custom-text-shadow text-primary">
+        <h2 className="h-10 uppercase text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-widest custom-text-shadow text-blue-600">
           {/* text from array will display here */}
           <span className="text-white">{text}</span>
           {/* change the color of the cursor here manually by adding the prop "cursorColor="#30a8ff" */}

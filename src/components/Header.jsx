@@ -78,6 +78,7 @@ export default function Header() {
       }}
       transition={{ type: "tween", ease: "easeOut", duration: 0.8 }}
       className="bg-black/80 sticky top-0 z-20 w-full min-h-[61px] py-3 md:py-4 px-4 text-base border-b border-gray-300/20 backdrop-blur"
+      style={{ zIndex: 21 }}
     >
       {/* Navbar */}
       <nav className="max-w-7xl mx-auto flex justify-between items-center">

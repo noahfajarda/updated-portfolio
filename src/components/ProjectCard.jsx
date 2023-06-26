@@ -8,7 +8,7 @@ export default function ProjectCard({ project }) {
   const projectLinkBtn =
     "transition-all ease-in-out duration-300 py-2 px-4 w-full sm:w-fit rounded-full font-semibold flex justify-center items-center gap-2";
   const btnPrimaryStyle =
-    "transition-all ease-in-out duration-300 border border-primary bg-primary hover:bg-primary-shade hover:border-primary-shade text-white";
+    "transition-all ease-in-out duration-300 border border-primary bg-primary hover:bg-primary-shade hover:border-primary-shade text-sky-300 hover:text-blue-500";
 
   return (
     <motion.li
@@ -37,7 +37,7 @@ export default function ProjectCard({ project }) {
           className="w-full h-full object-cover group-hover:scale-125 transition ease-in-out duration-500"
         ></img>
         {/* Overlay */}
-        <p className="absolute z-[1] w-full h-full flex flex-col justify-center items-center text-2xl md:text-3xl font-semibold text-primary opacity-0 group-hover:opacity-100 transition ease-in-out duration-500">
+        <p className="absolute z-[1] w-full h-full flex flex-col justify-center items-center text-2xl md:text-3xl font-semibold text-sky-500 opacity-0 group-hover:opacity-100 transition ease-in-out duration-500">
           <span className="flex">
             View Project
             <span className="ml-2 mt-1">
@@ -55,7 +55,7 @@ export default function ProjectCard({ project }) {
             href={project.projectLink}
             target="_blank"
             rel="noreferrer"
-            className={`flex flex-wrap text-2xl md:text-3xl font-bold tracking-wide group-hover:text-primary ${customTransition} hover:underline underline-offset-4`}
+            className={`flex flex-wrap text-2xl md:text-3xl font-bold tracking-wide text-sky-500 group-hover:text-sky-700 ${customTransition} hover:underline underline-offset-4`}
           >
             {project.title}
             <span

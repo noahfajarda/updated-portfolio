@@ -142,15 +142,15 @@ export default function Contact() {
             {/* submit button */}
             <button
               type="submit"
-              className={`h-12 ${customButton} items-center gap-2 btn-primary-style`}
+              className={`h-12 ${customButton} bg-sky-700 hover:bg-sky-900 items-center gap-2 btn-primary-style`}
             >
               {loading ? (
                 <AiOutlineLoading className="animate-spin h-6 w-6" />
               ) : (
-                <>
-                  Submit
+                <div className="w-full flex items-center justify-center">
+                  <div className="mr-2">Submit</div>
                   <MdSend />
-                </>
+                </div>
               )}
             </button>
           </motion.form>

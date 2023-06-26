@@ -50,6 +50,7 @@ export default function About() {
           // tween == duration based animation
           transition={{ type: "tween", ease: "easeOut", duration: 1 }}
           className={`${sectionStyling}`}
+          style={{ zIndex: 20 }}
         >
           <h2
             className={`mb-4 text-3xl md:text-4xl text-center uppercase tracking-widest font-semibold ${customGradientText}`}
@@ -81,7 +82,7 @@ export default function About() {
             ))}
             <a
               href="#work"
-              className={`w-fit my-2 flex flex-wrap text-cyan-400 font-semibold group ${customTransition} duration-300 hover:underline hover:text-cyan-400 underline-offset-4`}
+              className={`w-fit my-2 flex flex-wrap text-sky-400 font-semibold group ${customTransition} duration-300 hover:underline hover:text-sky-400 underline-offset-4`}
             >
               Check out some of my latest projects.
               <span
