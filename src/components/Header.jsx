@@ -102,7 +102,7 @@ export default function Header() {
             <li key={navLink.name}>
               <a
                 href={navLink.url}
-                className={`text-white hover:text-sky-500 ${customTransition}`}
+                className={`text-white font-bold hover:text-sky-500 ${customTransition}`}
               >
                 {navLink.name}
               </a>
@@ -127,7 +127,7 @@ export default function Header() {
                 href={socialLink.url}
                 target="_blank"
                 rel="noreferrer"
-                className={`text-2xl text-gray-400 hover:text-sky-500 ${customTransition}`}
+                className={`text-2xl text-gray-400 hover:text-fuchsia-400 ${customTransition}`}
               >
                 {socialLink.icon}
               </a>
