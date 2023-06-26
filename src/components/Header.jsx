@@ -84,10 +84,9 @@ export default function Header() {
       <nav className="max-w-7xl mx-auto flex justify-between items-center">
         {/* Logo */}
         <a
-          href="/"
+          href="#home"
           aria-label="home"
           className={`py-1 md:p-0 hover:opacity-70 ${customTransition}`}
-          onClick={() => window.location.replace("/")}
         >
           <img
             src={`/${LogoImage}`}
@@ -103,7 +102,7 @@ export default function Header() {
             <li key={navLink.name}>
               <a
                 href={navLink.url}
-                className={`text-white hover:text-primary ${customTransition}`}
+                className={`text-white hover:text-sky-500 ${customTransition}`}
               >
                 {navLink.name}
               </a>
@@ -113,7 +112,9 @@ export default function Header() {
           {/* Resume Link */}
           <li>
             <a href={resumeLink} target="_blank" rel="noreferrer">
-              <button className="py-2 px-4 rounded-full btn-secondary-style">
+              <button
+                className={`py-2 px-4 rounded-full bg-sky-500 text-white hover:bg-sky-800 ${customTransition}`}
+              >
                 Resume
               </button>
             </a>
@@ -126,7 +127,7 @@ export default function Header() {
                 href={socialLink.url}
                 target="_blank"
                 rel="noreferrer"
-                className={`text-2xl text-gray-400 hover:text-primary ${customTransition}`}
+                className={`text-2xl text-gray-400 hover:text-sky-500 ${customTransition}`}
               >
                 {socialLink.icon}
               </a>
