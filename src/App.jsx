@@ -9,6 +9,7 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Skills from "./components/Skills";
 import Work from "./components/Work";
+import { useEffect } from "react";
 
 const containerVariants = {
   hidden: {
@@ -42,6 +43,15 @@ const contactCTA = {
 };
 
 function App() {
+  // automatic scroll for link param
+  useEffect(() => {
+    if (window.location.hash) {
+      const id = window.location.hash.replace("#", "");
+      const element = document.getElementById(id);
+      element.scrollIntoView();
+    }
+  }, []);
+
   return (
     <div className="font-sans bg-[#0a0a0a] text-gray-100 h-screen z-0 overflow-y-auto overflow-x-hidden scroll-smooth scrollbar-firefox md:scrollbar">
       <Header />
