@@ -26,7 +26,7 @@ const containerVariants = {
 
 // Resume URL link
 const resumeLink =
-  "https://drive.google.com/file/d/112Dal6n6-h7QMCzhI_duo_V1_NeLl369/view";
+  "https://drive.google.com/file/d/1hDxYWdyyAAlOTUOeOIFAcyCU5yFyJ7Jm/view";
 
 const resumeCTA = {
   message: `Want to see more of what I can do? Check out my resume.`,

@@ -10,7 +10,7 @@ import {
 
 export default function MobileMenu({ navMenu, setNavMenu, navLinks }) {
   const resumeLink =
-    "https://drive.google.com/file/d/112Dal6n6-h7QMCzhI_duo_V1_NeLl369/view";
+    "https://drive.google.com/file/d/1hDxYWdyyAAlOTUOeOIFAcyCU5yFyJ7Jm/view";
   // Social URL Links
   const socialLinks = [
     {

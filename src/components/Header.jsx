@@ -36,7 +36,7 @@ export default function Header() {
   ];
 
   const resumeLink =
-    "https://drive.google.com/file/d/112Dal6n6-h7QMCzhI_duo_V1_NeLl369/view";
+    "https://drive.google.com/file/d/1hDxYWdyyAAlOTUOeOIFAcyCU5yFyJ7Jm/view";
 
   const navLinks = [
     {
