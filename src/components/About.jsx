@@ -76,7 +76,7 @@ export default function About() {
           >
             {/* iterate through bio paragraphs */}
             {bioParagraphs.map((paragraph) => (
-              <p key={paragraph.id} className={"text-sm sm:text-lg"}>
+              <p key={paragraph.id} className={"text-md sm:text-lg"}>
                 {paragraph.text}
               </p>
             ))}
