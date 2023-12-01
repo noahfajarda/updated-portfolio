@@ -19,7 +19,7 @@ export default function Work() {
         "Tailwind CSS",
         "MongoDB",
         "Clerk Authentication",
-        "zod",
+        "Zod",
       ],
       projectLink: "https://synqly.vercel.app",
       githubLink: "https://github.com/noahfajarda/Synqly",
