@@ -9,6 +9,22 @@ export default function Work() {
   // Project List for Work section
   const projectList = [
     {
+      title: "Synqly",
+      image: "synqly.png",
+      description: `Synqly is a social media application bootstrapped with Next.js, offering users a platform to share their thoughts and clips through interactive posts or synqlets. Synqly allows for communities, profiles, and so much more!`,
+      tech: [
+        "Next.js",
+        "React",
+        "Redux",
+        "Tailwind CSS",
+        "MongoDB",
+        "Clerk Authentication",
+        "zod",
+      ],
+      projectLink: "https://synqly.vercel.app",
+      githubLink: "https://github.com/noahfajarda/Synqly",
+    },
+    {
       title: "Snapz",
       image: "snapz.png",
       description: `Snapz is a social media application built on the MERN stack, offering users a platform to showcase their memories through snapshots, short clips, and interactive posts. With features like following users and embedded comments, Snapz provides a creative space for individuals to share memorable moments with other like-minded individuals.`,
