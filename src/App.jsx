@@ -26,7 +26,7 @@ const containerVariants = {
 
 // Resume URL link
 const resumeLink =
-  "https://drive.google.com/file/d/1hDxYWdyyAAlOTUOeOIFAcyCU5yFyJ7Jm/view";
+  "https://drive.google.com/file/d/1ic_wL6nCDne9xwbN_AzNPLXF0QbCPHjH/view";
 
 const resumeCTA = {
   message: `Want to see more of what I can do? Check out my resume.`,
@@ -54,7 +54,7 @@ function App() {
 
   return (
     <div className="font-sans bg-[#0a0a0a] text-gray-100 h-screen z-0 overflow-y-auto overflow-x-hidden scroll-smooth scrollbar-firefox md:scrollbar">
-      <Header />
+      <Header resumeLink={resumeLink} />
       <Hero />
       <About />
       <CallToAction {...contactCTA} />

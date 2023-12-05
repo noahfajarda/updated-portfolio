@@ -11,7 +11,7 @@ import { motion } from "framer-motion";
 import MobileMenu from "./MobileMenu";
 import { customTransition } from "../utils/simplifiedTailwind";
 
-export default function Header() {
+export default function Header({resumeLink}) {
   const [navMenu, setNavMenu] = useState(false);
 
   const LogoImage = "logo.svg";
@@ -34,9 +34,6 @@ export default function Header() {
       url: "https://github.com/noahfajarda",
     },
   ];
-
-  const resumeLink =
-    "https://drive.google.com/file/d/1hDxYWdyyAAlOTUOeOIFAcyCU5yFyJ7Jm/view";
 
   const navLinks = [
     {
