@@ -10,6 +10,7 @@ import Hero from "./components/Hero";
 import Skills from "./components/Skills";
 import Work from "./components/Work";
 import { useEffect } from "react";
+import Experience from "./components/Experience";
 
 const containerVariants = {
   hidden: {
@@ -60,6 +61,7 @@ function App() {
       <CallToAction {...contactCTA} />
       <Skills />
       <CallToAction {...resumeCTA} />
+      <Experience />
       <Work />
       <Contact />
       <Footer />
