@@ -46,7 +46,7 @@ export default function Experience() {
           >
             <div className="w-full">
               <h4
-                className={`flex flex-wrap text-2xl md:text-3xl font-bold tracking-wide text-sky-500 group-hover:text-sky-700 ${customTransition} underline-offset-4 justify-center`}
+                className={`flex flex-wrap text-2xl md:text-3xl font-bold tracking-wide text-sky-500 group-hover:text-sky-700 ${customTransition} underline-offset-4 justify-center text-center`}
               >
                 Full-Stack Software Engineering Manager
               </h4>
@@ -86,7 +86,7 @@ export default function Experience() {
           >
             <div className="w-full">
               <h4
-                className={`flex flex-wrap text-2xl md:text-3xl font-bold tracking-wide text-sky-500 group-hover:text-sky-700 ${customTransition} underline-offset-4 justify-center`}
+                className={`flex flex-wrap text-2xl md:text-3xl font-bold tracking-wide text-sky-500 group-hover:text-sky-700 ${customTransition} underline-offset-4 justify-center text-center`}
               >
                 Software Development Engineer
               </h4>
