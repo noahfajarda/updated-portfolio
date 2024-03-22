@@ -61,8 +61,8 @@ function App() {
       <CallToAction {...contactCTA} />
       <Skills />
       <CallToAction {...resumeCTA} />
-      <Experience />
       <Work />
+      <Experience />
       <Contact />
       <Footer />
     </div>
